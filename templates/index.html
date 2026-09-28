@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <a href="{{ url_for('create_flashcard') }}" class="btn btn-primary">Create Flashcard</a>
+    <a href="{{ url_for('study') }}" class="btn btn-secondary">Study Flashcards</a>
+
+    <h2 class="mt-5">Flashcards</h2>
+    <ul class="list-group">
+        {% for flashcard in flashcards %}
+            <li class="list-group-item">{{ flashcard.question }} - {{ flashcard.answer }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

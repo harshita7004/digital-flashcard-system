@@ -1,0 +1,8 @@
+﻿.venv/
+Lib/
+Scripts/
+.idea/
+__pycache__/
+*.pyc
+instance/
+.env

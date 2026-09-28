@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="mt-5">Study Flashcards</h2>
+    <ul class="list-group">
+        {% for flashcard in flashcards %}
+            <li class="list-group-item">
+                <strong>Question:</strong> {{ flashcard.question }}<br>
+                <strong>Answer:</strong> {{ flashcard.answer }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
